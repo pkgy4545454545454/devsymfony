@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.symfony.com configuration/version/2_1/routing.xsd">
+    <route id="app_ticket" path="/tickets" name="app_ticket">
+        <component>App\Controller\TicketController::class</component>
+    </route>
+
+    <route id="app_ticket_add" path="/tickets/add" name="app_ticket_add">
+        <component>App\Controller\TicketController::class</component>
+    </route>
+
+    <route id="app_ticket_modify" path="/tickets/{id}/modify" name="app_ticket_modify">
+        <component>App\Controller\TicketController::class</component>
+    </route>
+</routes>
